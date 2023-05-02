@@ -28,12 +28,12 @@ date_formats = {
 def process_times():
     # this function retrieves fixtures from a Mysql database and deletes those that have been played out.
 
-    username = 'b6a65ac5faf4d8'
-    password = 'b36da629'
-    hostname = 'eu-cdbr-west-03.cleardb.net'
-    port = '3306'
-    database = 'heroku_6330b058c037d6a'
-
+    username = ?
+    password = ?
+    hostname = ?
+    port = ?
+    database = ?
+    
     cnx = mysql.connector.connect(user=username, password=password, host=hostname, port=port, database=database)
     cursor = cnx.cursor()
 
@@ -65,11 +65,11 @@ process_times.cache = {}
 def check_ids(mid):
     # this function checks if a fixture id from flashscore.com is already in our database or not. If it is, we skip.
 
-    username = 'b6a65ac5faf4d8'
-    password = 'b36da629'
-    hostname = 'eu-cdbr-west-03.cleardb.net'
-    port = '3306'
-    database = 'heroku_6330b058c037d6a'
+    username = ?
+    password = ?
+    hostname = ?
+    port = ?
+    database = ?
 
     cnx = mysql.connector.connect(user=username, password=password, host=hostname, port=port, database=database)
     cursor = cnx.cursor()
@@ -138,14 +138,14 @@ def get_fixture_list():
     # This function scrapes the fixtures due in the next 72 hours in the leagues covered in soccer_countries_leagues.
     # It saves the fixture info into a mysql table for later use by our form scraper.
 
-    path = r"C:\Users\kiera\Downloads\chromedriver_win32 (10)\chromedriver.exe"
+    path = PATH_TO_DRIVER
     driver = webdriver.Chrome(service=Service(path))
 
-    username = 'b6a65ac5faf4d8'
-    password = 'b36da629'
-    hostname = 'eu-cdbr-west-03.cleardb.net'
-    port = '3306'
-    database = 'heroku_6330b058c037d6a'
+    username = ?
+    password = ?
+    hostname = ?
+    port = ?
+    database = ?
 
     cnx = mysql.connector.connect(user=username, password=password, host=hostname, port=port, database=database)
     cursor = cnx.cursor()
